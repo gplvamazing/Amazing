@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main()
+{
+  int i=0;
+  for(i=1;i<=9;i++)
+  {
+    int j=0;
+    for(j=1;j<=i;j++) //内层循环最为巧妙，永远都会比外层循环少一，直到j自增到i就会相等
+    {
+      printf("%d*%d=%d ",i,j,i*j);
+    }
+    printf("\n");
+  }
+}
